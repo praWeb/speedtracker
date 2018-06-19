@@ -51,7 +51,7 @@ budgets:
    -
      metric: TTFB
      max: 600
-     alerts: ["emailAlert", "slackAlert"]
+     alerts: ["slackAlert"]
    -
      metric: firstPaint
      max: 2000
@@ -60,4 +60,12 @@ budgets:
      metric: fullyLoaded
      max: 3000
      alerts: ["slackAlert"]
+   -
+     metric: SpeedIndex
+     max: 5000
+     alerts: ["slackAlert"]
+   -
+    metric: domElements
+    max: 2000
+    alerts: ["slackAlert"]
 ---
