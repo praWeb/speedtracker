@@ -54,7 +54,7 @@ budgets:
      alerts: ["slackAlert"]
    -
      metric: firstPaint
-     max: 2000
+     max: 1000
      alerts: ["slackAlert"]
    -
      metric: fullyLoaded
@@ -62,10 +62,14 @@ budgets:
      alerts: ["slackAlert"]
    -
      metric: SpeedIndex
-     max: 5000
+     max: 1000
      alerts: ["slackAlert"]
    -
-    metric: domElements
-    max: 2000
-    alerts: ["slackAlert"]
+     metric: loadTime
+     max: 2500
+     alerts: ["slackAlert"]
+   -
+     metric: pagespeed
+     min: 90
+     alerts: ["slackAlert"]
 ---
